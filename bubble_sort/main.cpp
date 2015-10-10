@@ -22,7 +22,8 @@ bool isInOrder( std::vector<int> in )
 
 int main()
 {
-	
+
+	//Create the main vector to store all the unsorted and sorted data.	
 	std::vector<int> data;
 
 	for( int i = 0; i < 10; i++ )
@@ -32,15 +33,18 @@ int main()
 
 	}
 
+	//This loop is respnsbile fot the sorting, and runs as long as the array is not sorted.
 	while( !isInOrder( data ) )
 	{
 
 		for( int i = 0; i < data.size()-1; i++ )
 		{
 
+			//If the data ahead is smaller than the data it's currently at, swap their positions.
 			if( data.at( i ) > data.at( i+1 ) )
 			{
 
+				//Store the current value in a temporary int.
 				int temp = data.at(i);
 				data.at(i) = data.at(i+1);
 				data.at(i+1) = temp;
@@ -51,6 +55,7 @@ int main()
 
 	}
 
+	//Print out all the data.
 	for( int i = 0; i < data.size(); i++ )
 	{
 
@@ -59,5 +64,7 @@ int main()
 	}
 
 	std::cout << std::endl;
+
+	data.clear();
 
 }
