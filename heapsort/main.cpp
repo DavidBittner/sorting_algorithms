@@ -6,7 +6,7 @@ int main()
 {
 
 	std::vector<int> data;
-	int amountOfVals = 10000;
+	int amountOfVals = 100000;
 
 	for( int i = 0; i < amountOfVals; i++ )
 	{

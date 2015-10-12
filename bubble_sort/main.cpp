@@ -26,7 +26,7 @@ int main()
 	//Create the main vector to store all the unsorted and sorted data.	
 	std::vector<int> data;
 
-	for( int i = 0; i < 10; i++ )
+	for( int i = 0; i < 1000; i++ )
 	{
 
 		data.push_back( rand()%100 );

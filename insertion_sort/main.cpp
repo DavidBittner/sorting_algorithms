@@ -12,10 +12,10 @@ int main()
 	srand( time( nullptr ) );
 
 	//Add a whole buncha numbahs to it!
-	for( int i = 0; i < 10; i++ )
+	for( int i = 0; i < 1000; i++ )
 	{
 
-		data.push_back( (rand()%10)+1 );
+		data.push_back( (rand()%1000)+1 );
 
 	}
 
